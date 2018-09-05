@@ -5581,6 +5581,7 @@ img {
 .profile-page h5.description {
   max-width: 700px;
   margin: 20px auto 75px;
+  color: #000000;
 }
 
 .profile-page .nav-align-center {
