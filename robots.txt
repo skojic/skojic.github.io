@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://skojic.vercel.app/sitemap.xml
