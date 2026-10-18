@@ -64,7 +64,7 @@
       <p class="crumb"><a href="/#projects">Projects</a></p>
       <h1 class="case-title">Figma to code, checked in a real browser</h1>
       <p class="case-lede">A skill pack for Claude Code that turns a Figma design into a written spec, then checks the built component in a real browser and returns PASS or FAIL. The verdict is decided by tested code, not by the model.</p>
-      <p class="case-meta">I built the production version for the Merck frontend workstream, where it cut development time by 60–70% across markets. Merck and Cognizant Netcentric later presented a sanitised version of the workflow at Adobe Summit Germany. This is the public, client-free version of the same approach: three skills, one config file, MIT licence.</p>
+      <p class="case-meta">I built the production version for the Merck frontend workstream, where it cut development time by 60–70%, and was then used across markets. Merck and Cognizant Netcentric later presented a sanitised version of the workflow at Adobe Summit Germany. This is the public, client-free version of the same approach: three skills, one config file, MIT licence.</p>
 
       <figure class="shot">
         <img src="/img/work/f2c-overview.webp" width="1600" height="489" alt="Presentation page: the headline 'Figma frames in. PASS / FAIL out.' next to the four tools the pack connects: Jira, Figma, Vitest and a browser." decoding="async">
@@ -94,7 +94,7 @@
       <section aria-labelledby="gate">
         <h2 id="gate">The verdict is code, not the model</h2>
         <p>The model gathers evidence. A small, dependency-free core decides. It normalises units before comparing, so <code>2rem</code> matches <code>32px</code>, and applies the PASS/FAIL rules.</p>
-        <p>It has three outcomes, not two: PASS, FAIL, and could not evaluate. A gate that can't evaluate its input must not report a result, so no screenshots captured or a malformed evidence file end the run without a verdict. The same rule applies to accessibility: if axe-core fails to load, that's a FAIL, never "zero violations".</p>
+        <p>It has three outcomes, not two: PASS, FAIL, and could not evaluate. A gate that can't evaluate its input must not report a result, so a run with no screenshots, or with a malformed evidence file, ends without a verdict. The same rule applies to accessibility: if axe-core fails to load, that's a FAIL, never "zero violations".</p>
       </section>
 
       <section aria-labelledby="hooks">
