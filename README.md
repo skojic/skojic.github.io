@@ -23,5 +23,5 @@ Then open http://127.0.0.1:4173.
 ## Common edits
 
 - **Add a project:** copy one `<li class="project">` block in `index.html`, newest first.
-- **Add the photo:** save it as `img/srdjan-kojic.webp` and swap the placeholder `div` in the About section for the `img` line in the comment above it.
+- **Change the photo:** replace `img/srdjan-kojic-480.webp` and `-960.webp` (4:5, 480×600 and 960×1200).
 - **Change the address:** the site URL appears in `index.html` (canonical, Open Graph, structured data), `robots.txt` and `sitemap.xml`. Search for `skojic.vercel.app`.
