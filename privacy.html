@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy: Srdjan Kojic</title>
+  <meta name="description" content="What data this website processes, why, and your rights.">
+  <link rel="canonical" href="https://skojic.vercel.app/privacy">
+  <meta name="theme-color" content="#0E1322">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="preload" href="/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="bar">
+    <a class="mark" href="/">sk<span class="sr-only"> (Srdjan Kojic, home)</span></a>
+    <nav class="nav" aria-label="Sections">
+      <ul>
+        <li><a href="/#about">About</a></li>
+        <li><a href="/#work">Work</a></li>
+        <li><a href="/#projects">Projects</a></li>
+        <li><a href="/#talks">Talks</a></li>
+        <li><a href="/#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="kbd-btn" type="button" data-open-palette aria-haspopup="dialog"><span data-mod>⌘</span> K<span class="sr-only"> (open command menu)</span></button>
+  </header>
+
+  <main id="main" class="case">
+    <article class="col">
+      <h1 class="case-title">Privacy</h1>
+      <p class="case-lede">This is a personal website. It sets no cookies, runs no analytics or tracking, and loads nothing from third parties. The only personal data processed is what any web server needs to deliver a page.</p>
+
+      <section aria-labelledby="controller">
+        <h2 id="controller">Who is responsible</h2>
+        <p>Srdjan Kojic, Berlin, Germany. Email: <a href="mailto:srdjan.m.kojic@gmail.com">srdjan.m.kojic@gmail.com</a></p>
+      </section>
+
+      <section aria-labelledby="hosting">
+        <h2 id="hosting">When you visit</h2>
+        <p>The site is hosted by Vercel Inc., 440 N Barranca Avenue #4133, Covina, CA 91723, United States, which processes data on my behalf. To deliver and protect the site, Vercel's servers record technical data for each request, including your IP address, the page requested, the time, and your browser's user agent.</p>
+        <p>The legal basis is my legitimate interest in running a secure, working website (Art. 6(1)(f) GDPR). Vercel says it keeps this data only as long as needed for its legal and contractual obligations, and transfers data to the United States under the EU-U.S. Data Privacy Framework or standard contractual clauses.</p>
+      </section>
+
+      <section aria-labelledby="none">
+        <h2 id="none">What this site doesn't do</h2>
+        <p>No cookies, no analytics, no advertising, no tracking pixels. Fonts are served from this site, not from Google or another provider. There are no embedded videos or social media widgets.</p>
+        <p>Links to LinkedIn, GitHub and YouTube are plain links. Nothing is sent to those services unless you follow a link, and from then on their own privacy policies apply.</p>
+      </section>
+
+      <section aria-labelledby="email">
+        <h2 id="email">If you email me</h2>
+        <p>I use your message and address only to reply, and delete them when the conversation no longer needs them. The legal basis is my legitimate interest in answering you, or taking steps you've asked for before a contract (Art. 6(1)(b) and (f) GDPR).</p>
+      </section>
+
+      <section aria-labelledby="rights">
+        <h2 id="rights">Your rights</h2>
+        <p>You can ask for access to your data, and for it to be corrected, deleted, restricted or handed over to you, and you can object to processing (Art. 15–21 GDPR). Email me to use any of these rights.</p>
+        <p>You can also complain to a data protection authority. For Berlin, that's the Berliner Beauftragte für Datenschutz und Informationsfreiheit.</p>
+      </section>
+
+      <p class="case-meta">Last updated 18 October 2026.</p>
+    </article>
+  </main>
+
+  <footer class="footer"><span>Srdjan Kojic, Berlin</span><a href="/privacy">Privacy</a></footer>
+
+  <dialog class="palette" aria-label="Command menu">
+    <input type="text" role="combobox" aria-expanded="true" aria-controls="palette-list" aria-autocomplete="list" aria-label="Search commands" placeholder="Type a command or search…" autocomplete="off" spellcheck="false">
+    <ul id="palette-list" role="listbox" aria-label="Commands"></ul>
+    <p class="status" role="status" aria-live="polite"></p>
+  </dialog>
+
+  <script src="/main.js" defer></script>
+</body>
+</html>

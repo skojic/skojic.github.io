@@ -10,7 +10,9 @@
 
   const go = (hash) => () => {
     dialog.close();
-    document.querySelector(hash).scrollIntoView();
+    const target = document.querySelector(hash);
+    if (!target) { location.href = "/" + hash; return; }
+    target.scrollIntoView();
     history.replaceState(null, "", hash);
   };
   const open = (url) => () => { dialog.close(); window.open(url, "_blank", "noopener"); };
