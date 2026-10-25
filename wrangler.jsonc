@@ -1,0 +1,18 @@
+{
+  "$schema": "https://unpkg.com/wrangler/config-schema.json",
+  // Personal website: static files from site/, served by a Cloudflare Worker.
+  "name": "skojic",
+  "compatibility_date": "2026-10-25",
+  "assets": {
+    "directory": "./site",
+    // Unknown paths get site/404.html with status 404
+    "not_found_handling": "404-page"
+  },
+  // The zone srdjankojic.com is on Cloudflare. www is redirected to the apex by a Redirect Rule in the dashboard.
+  "routes": [
+    { "pattern": "srdjankojic.com", "custom_domain": true },
+    { "pattern": "www.srdjankojic.com", "custom_domain": true }
+  ],
+  "workers_dev": false,
+  "preview_urls": false
+}

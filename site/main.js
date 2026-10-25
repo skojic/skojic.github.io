@@ -119,3 +119,13 @@
   // Clicking the backdrop closes the menu.
   dialog.addEventListener("click", (e) => { if (e.target === dialog) dialog.close(); });
 })();
+
+// Light and dark theme switch. theme.js sets the starting theme before first paint.
+(() => {
+  const root = document.documentElement;
+  document.querySelectorAll("[data-theme-toggle]").forEach((b) => b.addEventListener("click", () => {
+    const next = root.dataset.theme === "dark" ? "light" : "dark";
+    root.dataset.theme = next;
+    try { localStorage.setItem("theme", next); } catch {}
+  }));
+})();
