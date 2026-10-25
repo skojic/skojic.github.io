@@ -8,6 +8,15 @@
   Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-0eQjNPLKVt361K1LLJSqMkOh7GVzHlHGIzARgun6nu8='; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
   Strict-Transport-Security: max-age=31536000
 
+# HTML pages: no-transform stops Cloudflare from rewriting them, which keeps the
+# automatically injected Web Analytics script out (Cloudflare Web Analytics FAQ).
+/
+  Cache-Control: public, max-age=0, must-revalidate, no-transform
+/privacy
+  Cache-Control: public, max-age=0, must-revalidate, no-transform
+/work/*
+  Cache-Control: public, max-age=0, must-revalidate, no-transform
+
 # Fonts, images and the logo are cached for a year.
 # A changed file in these folders must get a new file name, or returning visitors keep the old one.
 /fonts/*
