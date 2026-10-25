@@ -2,7 +2,7 @@
 
 Personal site of Srdjan Kojic. Plain HTML, CSS and a little JavaScript, no build step.
 
-Live at https://srdjankojic.com, served by a Cloudflare Worker with static assets. The old address, https://skojic.vercel.app, redirects every path to the new domain (see `vercel.json`).
+Live at https://srdjankojic.com, served by a Cloudflare Worker with static assets.
 
 ## Run locally
 
@@ -33,7 +33,6 @@ Verify a deploy by downloading a file over HTTPS and comparing it with the local
 - `site/_headers`: security headers and caching
 - `wrangler.jsonc`: the Worker that serves the site on srdjankojic.com
 - `www-redirect/`: a second, separate Worker on www.srdjankojic.com that sends every request to the same path on srdjankojic.com (301). It rarely changes; deploy it from its own folder with `cd www-redirect && npx wrangler deploy`.
-- `vercel.json`: the permanent redirect from the old address
 
 ## Common edits
 
