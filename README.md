@@ -31,7 +31,8 @@ Verify a deploy by downloading a file over HTTPS and comparing it with the local
 - `site/fonts/`: Schibsted Grotesk, self-hosted, Latin subset (SIL Open Font License, see `site/fonts/OFL.txt`)
 - `site/img/og.png`: the preview image shown when the link is shared
 - `site/_headers`: security headers and caching
-- `wrangler.jsonc`: the Worker and its custom domains
+- `wrangler.jsonc`: the Worker that serves the site on srdjankojic.com
+- `www-redirect/`: a second, separate Worker on www.srdjankojic.com that sends every request to the same path on srdjankojic.com (301). It rarely changes; deploy it from its own folder with `cd www-redirect && npx wrangler deploy`.
 - `vercel.json`: the permanent redirect from the old address
 
 ## Common edits
